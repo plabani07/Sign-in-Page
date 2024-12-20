@@ -1,0 +1,198 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: #333;
+}
+
+.container {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Back Arrow */
+.back-arrow {
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+/* Logo */
+.logo img {
+    width: 150px;
+    margin: 0 auto 20px;
+}
+
+/* Header */
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+/* Google Button */
+.google-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1668e3;
+    color: #fcfbfb;
+    border: none;
+    border-radius: 5px;
+    border-color: #fcf9f9;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.google-btn img {
+    width: 20px;
+    margin-right: 8px;
+}
+
+/* Divider */
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    color: #0c0c0c;
+}
+
+.divider span {
+    margin: 0 10px;
+    font-size: 12px;
+    background-color: #faf5f5;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Input Field */
+.input-field input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* Continue Button */
+.continue-btn {
+    position: relative;
+    display: inline;
+
+    background-color: #6985a5;
+    color: #060606;
+    border: none;
+    border-radius: 18px;
+    text-align: center;
+    opacity: 0.6;
+    transition: opacity 0.3;
+    width: 500%;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: not-allowed;
+    gap: .5rem;
+}
+
+/* Other Sign-in Options */
+.other-signin-text {
+    font-size: 14px;
+    margin: 15px 0 10px;
+}
+
+.other-options img {
+    width: 30px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    font-size: 12px;
+    color: #666;
+}
+
+footer a {
+    color: #0077ff;
+    text-decoration: none;
+}
+
+.footer-logos span {
+    display: inline-block;
+    margin: 10px 5px 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* General Button Styling */
+.uitk-button {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: rgb(29, 27, 27);
+    background-color: #6985a5;
+    border: none;
+    border-radius: 18px;
+    text-align: center;
+    cursor: not-allowed;
+    opacity: 0.6;
+    transition: opacity 0.3s ease, cursor 0.3s ease;
+}
+
+.uitk-button:enabled {
+    cursor: pointer;
+    opacity: 1;
+}
+
+/* Add pseudo-elements before and after */
+.uitk-button::before {
+    content: "⇐ ";
+    position: absolute;
+    left: -20px;
+    color: #f6f8fa;
+    font-size: 14px;
+}
+
+.uitk-button::after {
+    content: " ⇒";
+    position: absolute;
+    right: -20px;
+    color: #f6f8fa;
+    font-size: 14px;
+}
+
+/* Optional: Responsive Styling */
+@media (max-width: 600px) {
+    .uitk-button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+    .uitk-button::before,
+    .uitk-button::after {
+        font-size: 12px;
+    }
+}
